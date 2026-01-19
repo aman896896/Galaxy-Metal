@@ -4,654 +4,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajasthan Mining Group - Premium Natural Stone</title>
+    <title>Rajasthan Mining Group | Global Exporters of Premium Natural Stone</title>
+    <meta name="description"
+        content="Leading exporter of premium natural stone from Rajasthan. We supply high-quality granite, marble, and sandstone to global markets. Direct from quarry to project.">
+    <link rel="canonical" href="https://www.rajasthanmininggroup.com/index.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&display=swap"
         rel="stylesheet">
-    <style>
-        :root {
-            /* Light Luxury Theme - Adapted for Web */
-            --bg-color: #ffffff;
-            --bg-secondary: #fdfbf7;
-            --bg-dark: #1a1a1a;
-            --primary-gold: #b38b4d;
-            --primary-gold-dim: #d4b886;
-            --text-dark: #2c2c2c;
-            --text-light: #666666;
-            --text-white: #f0f0f0;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Lato', sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-dark);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        /* Typography */
-        h1,
-        h2,
-        h3,
-        h4 {
-            font-family: 'Cinzel', serif;
-            font-weight: 600;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Navigation */
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            padding: 20px 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease;
-        }
-
-        .nav-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-family: 'Cinzel', serif;
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: var(--text-dark);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 30px;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--text-dark);
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--primary-gold);
-        }
-
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/1.jpeg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            /* Parallax effect */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            position: relative;
-        }
-
-        .hero-content {
-            max-width: 800px;
-            padding: 20px;
-            animation: fadeIn 1.5s ease;
-        }
-
-        .hero h1 {
-            font-size: clamp(2.5rem, 5vw, 4.5rem);
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            font-weight: 300;
-            letter-spacing: 1px;
-        }
-
-        .btn-gold {
-            display: inline-block;
-            padding: 15px 40px;
-            border: 2px solid var(--primary-gold);
-            color: white;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-size: 0.9rem;
-            transition: all 0.3s;
-            background: rgba(0, 0, 0, 0.2);
-        }
-
-        .btn-gold:hover {
-            background: var(--primary-gold);
-            color: white;
-        }
-
-        /* Section Styling */
-        section {
-            padding: 80px 0;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .section-header h2 {
-            font-size: 2.5rem;
-            color: var(--text-dark);
-            margin-bottom: 15px;
-        }
-
-        .section-header p {
-            color: var(--primary-gold);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-size: 0.9rem;
-            font-weight: 700;
-        }
-
-        .gold-divider-center {
-            width: 60px;
-            height: 3px;
-            background: var(--primary-gold);
-            margin: 0 auto;
-        }
-
-        /* About Section */
-        .about {
-            background: var(--bg-secondary);
-        }
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
-
-        .about-text h3 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-        }
-
-        .about-text p {
-            margin-bottom: 20px;
-            color: var(--text-light);
-            font-size: 1.05rem;
-        }
-
-        .about-stats {
-            display: flex;
-            gap: 40px;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #e0e0e0;
-        }
-
-        .stat h4 {
-            font-size: 2.5rem;
-            color: var(--primary-gold);
-            margin-bottom: 5px;
-        }
-
-        .stat span {
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            color: var(--text-light);
-        }
-
-        .about-img-group {
-            display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            gap: 15px;
-        }
-
-        .about-img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            border-radius: 4px;
-        }
-
-        .about-img-small {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            border-radius: 4px;
-            margin-top: 40px;
-            /* Offset effect */
-        }
-
-        /* Products Grid */
-        .products {
-            background: var(--bg-color);
-        }
-
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
-
-        .product-card {
-            background: white;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s;
-            overflow: hidden;
-            border: 1px solid #f0f0f0;
-        }
-
-        .product-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .product-img-wrapper {
-            height: 250px;
-            overflow: hidden;
-        }
-
-        .product-img-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s;
-        }
-
-        .product-card:hover .product-img-wrapper img {
-            transform: scale(1.1);
-        }
-
-        .product-info {
-            padding: 25px;
-            text-align: center;
-        }
-
-        .product-info h3 {
-            font-size: 1.4rem;
-            margin-bottom: 10px;
-        }
-
-        .product-info p {
-            color: var(--text-light);
-            font-size: 0.95rem;
-        }
-
-        /* Texture Gallery */
-        .gallery {
-            background: var(--bg-dark);
-            color: white;
-        }
-
-        .gallery h2 {
-            color: white;
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 15px;
-        }
-
-        .gallery-item {
-            position: relative;
-            height: 250px;
-            overflow: hidden;
-            cursor: pointer;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: opacity 0.3s;
-            opacity: 0.8;
-        }
-
-        .gallery-item:hover img {
-            opacity: 1;
-        }
-
-        /* Contact Section */
-        .contact {
-            background: var(--bg-secondary);
-        }
-
-        .contact-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 80px;
-            background: white;
-            padding: 60px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-        }
-
-        .contact-info h3 {
-            font-size: 2rem;
-            margin-bottom: 30px;
-        }
-
-        .info-group {
-            margin-bottom: 25px;
-            display: flex;
-            align-items: flex-start;
-        }
-
-        .info-icon {
-            width: 40px;
-            color: var(--primary-gold);
-            font-size: 1.5rem;
-            margin-right: 15px;
-        }
-
-        .info-content h4 {
-            font-size: 0.9rem;
-            color: var(--primary-gold);
-            text-transform: uppercase;
-            margin-bottom: 5px;
-        }
-
-        .info-content p {
-            color: var(--text-light);
-            line-height: 1.6;
-            margin-bottom: 0;
-        }
-
-        .map-frame {
-            width: 100%;
-            height: 100%;
-            min-height: 300px;
-            background: #eee;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #888;
-            border: 1px solid #ddd;
-        }
-
-        /* Footer */
-        footer {
-            background: #111;
-            color: #888;
-            padding: 40px 0;
-            text-align: center;
-            font-size: 0.9rem;
-        }
-
-        footer p {
-            margin-bottom: 10px;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Responsive */
-        @media (max-width: 900px) {
-
-            .about-grid,
-            .contact-container,
-            .gallery-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .about-grid {
-                gap: 30px;
-            }
-
-            .about-img-small {
-                margin-top: 15px;
-                height: 300px;
-            }
-
-            .gallery-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .nav-links {
-                display: none;
-            }
-
-            /* Simplified for mobile */
-        }
-
-        /* Print/PDF Optimization (Landscape Slide Deck) */
-        @media print {
-            @page {
-                size: 297mm 210mm;
-                /* Force A4 Landscape */
-                margin: 0;
-            }
-
-            body {
-                -webkit-print-color-adjust: exact !important;
-                print-color-adjust: exact !important;
-                background-color: var(--bg-color);
-                width: 297mm;
-            }
-
-            /* Hide Navigation for PDF */
-            nav {
-                display: none !important;
-            }
-
-            /* Turn Sections into Slides */
-            section {
-                page-break-after: always !important;
-                height: 210mm !important;
-                /* Full page height */
-                width: 100% !important;
-                display: flex !important;
-                flex-direction: column;
-                justify-content: center;
-                padding: 40px 0 !important;
-                margin: 0 !important;
-                overflow: hidden;
-                /* Prevent spillover */
-            }
-
-            .hero {
-                background-attachment: scroll !important;
-                /* Parallax fix for print */
-                background-position: center center !important;
-            }
-
-            /* Ensure grids fit on the page */
-            .product-grid,
-            .gallery-grid {
-                gap: 15px;
-            }
-
-            .product-img-wrapper {
-                height: 180px;
-            }
-
-            /* Slightly smaller for print fit */
-            .gallery-item {
-                height: 180px;
-            }
-
-            /* Hide Footer */
-            footer {
-                display: none;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css?v=2">
 </head>
 
 <body>
 
+
     <!-- Navigation -->
+    <nav>
+        <div class="container nav-content">
+            <a href="index.html" class="logo"><img src="images/logo-new.png" alt="Galaxy Metal"></a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-item active">Home</a>
+                <a href="about.html" class="nav-item">About</a>
+                <a href="products.html" class="nav-item">Collection</a>
+                <a href="contact.html" class="nav-item">Contact</a>
+                <a href="contact.html" class="nav-cta">Get Quote</a>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h2 style="font-size: 2rem; color: var(--bg-secondary); margin-bottom: 10px; font-family: 'Cinzel', serif;">
+            <h2
+                style="font-size: 2rem; color: white; margin-bottom: 5px; font-family: 'Cinzel', serif; letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">
                 GALAXY METAL</h2>
-            <p>DIRECT FROM THE MINES OF RAJASTHAN</p>
-            <h1>PREMIUM NATURAL STONE</h1>
-            <a href="#collection" class="btn-gold">View Collection 2026</a>
+            <p
+                style="font-size: 1rem; letter-spacing: 3px; margin-bottom: 20px; color: rgba(255,255,255,0.9); text-transform: uppercase;">
+                DIRECT FROM THE MINES OF RAJASTHAN</p>
+            <h1
+                style="font-size: clamp(3rem, 6vw, 5.5rem); margin-bottom: 40px; font-family: 'Cinzel', serif; line-height: 1.1;">
+                PREMIUM NATURAL<br>STONE</h1>
+            <a href="products.html" class="btn-gold"
+                style="padding: 15px 40px; border: 1px solid #b38b4d; background: transparent;">VIEW COLLECTION 2026</a>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Corporate Overview (About Teaser) -->
+    <section class="about teaser-section">
         <div class="container">
             <div class="about-grid">
-                <div class="about-text">
+                <div class="about-text" style="text-align: left;">
                     <div class="section-header" style="text-align: left; margin-bottom: 30px;">
-                        <p>Our Legacy</p>
-                        <h2>From Earth to Elegance</h2>
+                        <p>Our Corporate Legacy</p>
+                        <h2>The Art of Extraction</h2>
                         <div class="gold-divider-center" style="margin: 0;"></div>
                     </div>
-                    <p>Located in the heart of Rajasthan's mineral-rich belt, our company represents the pinnacle of
-                        Indian stone mining. We own and operate our quarries, ensuring that every block extracted meets
-                        the highest standards of structural integrity and aesthetic beauty.</p>
-                    <p>By eliminating middlemen and processing stone in our own state-of-the-art facilities, we offer
-                        our B2B partners unmatched quality and competitive pricing for large-scale projects.</p>
-
-
+                    <p>For over two decades, **Galaxy Metal** has stood as a vanguard in the Indian natural stone
+                        industry. Strategically located in the mineral-rich heartlands of Rajasthan, we command a
+                        vertically integrated operation—from sustainable quarrying to precision processing.</p>
+                    <p>We do not just mine stone; we curate geological masterpieces. Our direct-to-market approach
+                        ensures that architects, developers, and distributors worldwide receive uncompromised quality,
+                        eliminating intermediaries to deliver exceptional value.</p>
+                    <a href="about.html" class="btn-gold-dark" style="margin-top: 20px;">Read Our Full Story</a>
                 </div>
+                <!-- Image for visual balance -->
                 <div class="about-img-group">
-                    <img src="images/4.jpeg" class="about-img" alt="Quarry Site">
-                    <img src="images/6.jpeg" class="about-img-small" alt="Processing">
+                    <img src="images/4.jpeg" class="about-img" alt="Sustainable Quarrying">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Collection Section -->
-    <section id="collection" class="products">
+    <!-- About Collection Section (Distinct Request) -->
+    <section class="about-collection teaser-section" style="background: var(--bg-secondary); padding: 100px 0;">
         <div class="container">
             <div class="section-header">
-                <p>Signature Series</p>
-                <h2>Our Collection</h2>
+                <p>Curated Excellence</p>
+                <h2>About Our Collection</h2>
+                <div class="gold-divider-center"></div>
+            </div>
+            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 1.2rem; margin-bottom: 40px; color: var(--text-dark);">
+                    Our portfolio is a testament to the earth's diversity. We specialize in high-grade granite and
+                    marble, selected for their structural integrity and visual drama.
+                </p>
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 50px; text-align: left;">
+                    <div style="padding: 20px; background: white; border: 1px solid #eee;">
+                        <h4 style="color: var(--primary-gold); margin-bottom: 10px;">Exotic Variation</h4>
+                        <p style="font-size: 0.95rem;">Unique veining patterns that ensure no two slabs are identical,
+                            offering bespoke exclusivity.</p>
+                    </div>
+                    <div style="padding: 20px; background: white; border: 1px solid #eee;">
+                        <h4 style="color: var(--primary-gold); margin-bottom: 10px;">Structural Density</h4>
+                        <p style="font-size: 0.95rem;">Mined from deep quarries, ensuring superior hardness and
+                            resistance to wear for high-traffic zones.</p>
+                    </div>
+                    <div style="padding: 20px; background: white; border: 1px solid #eee;">
+                        <h4 style="color: var(--primary-gold); margin-bottom: 10px;">Precision Finish</h4>
+                        <p style="font-size: 0.95rem;">Processed using Italian technology to achieve mirror-polish or
+                            tactile honed finishes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collection Teaser -->
+    <section class="products teaser-section">
+        <div class="container">
+            <div class="section-header">
+                <p>Global Favorites</p>
+                <h2>Signature Series</h2>
                 <div class="gold-divider-center"></div>
             </div>
 
-            <div class="product-grid">
-                <!-- Product 1 -->
+            <div class="product-grid"
+                style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); max-width: 1000px; margin: 0 auto;">
+                <!-- Teaser Item 1 -->
                 <div class="product-card">
                     <div class="product-img-wrapper">
                         <img src="images/5.jpeg" alt="Royal White Marble">
                     </div>
                     <div class="product-info">
-                        <h3>Royal White Marble</h3>
-                        <p>Pristine white background with elegant gold and grey veining. Ideal for luxury flooring.</p>
+                        <h3>Royal White</h3>
+                        <p style="font-size: 0.9rem; margin-bottom: 15px;">The epitome of luxury flooring.</p>
+                        <a href="products.html"
+                            style="color: var(--primary-gold); text-decoration: none; font-weight: 700;">View
+                            Specification &rarr;</a>
                     </div>
                 </div>
 
-                <!-- Product 2 -->
+                <!-- Teaser Item 2 -->
                 <div class="product-card">
                     <div class="product-img-wrapper">
                         <img src="images/7.jpeg" alt="Imperial Granite">
                     </div>
                     <div class="product-info">
                         <h3>Imperial Granite</h3>
-                        <p>High-density, durable granite exhibiting uniform grain and superior strength.</p>
+                        <p style="font-size: 0.9rem; margin-bottom: 15px;">Industrial-grade durability.</p>
+                        <a href="products.html"
+                            style="color: var(--primary-gold); text-decoration: none; font-weight: 700;">View
+                            Specification &rarr;</a>
                     </div>
                 </div>
+            </div>
 
-                <!-- Product 3 -->
-                <div class="product-card">
-                    <div class="product-img-wrapper">
-                        <img src="images/2.jpeg" alt="Rajasthan Pink">
-                    </div>
-                    <div class="product-info">
-                        <h3>Rajasthan Pink Granite</h3>
-                        <p>Warm-toned marble that adds a sophisticated, inviting aura to interiors.</p>
-                    </div>
-                </div>
-
-                <!-- Product 4 -->
-                <div class="product-card">
-                    <div class="product-img-wrapper">
-                        <img src="images/14.jpeg" alt="Exotic Texture">
-                    </div>
-                    <div class="product-info">
-                        <h3>Exotic Collection</h3>
-                        <p>Rare and unique stone patterns for statement walls and architectural features.</p>
-                    </div>
-                </div>
+            <div style="margin-top: 50px;">
+                <a href="products.html" class="btn-gold">Explore Full Catalog</a>
             </div>
         </div>
     </section>
 
-    <!-- Texture Gallery -->
-    <section id="gallery" class="gallery">
-        <div class="container">
-            <div class="section-header">
-                <p style="color: #fff; opacity: 0.7;">Close Up Details</p>
-                <h2 style="color: #fff;">Texture Gallery</h2>
-                <div class="gold-divider-center"></div>
-            </div>
-
-            <div class="gallery-grid">
-                <div class="gallery-item"><img src="images/15.jpeg" alt="Texture 1"></div>
-                <div class="gallery-item"><img src="images/10.jpeg" alt="Texture 2"></div>
-                <div class="gallery-item"><img src="images/17.jpeg" alt="Texture 3"></div>
-                <div class="gallery-item"><img src="images/8.jpeg" alt="Texture 4"></div>
-                <div class="gallery-item"><img src="images/12.jpeg" alt="Block 1"></div>
-                <div class="gallery-item"><img src="images/16.jpeg" alt="Block 2"></div>
-                <div class="gallery-item"><img src="images/3.jpeg" alt="Quarry View"></div>
-                <div class="gallery-item"><img src="images/13.jpeg" alt="Block 3"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
+    <!-- Contact Section (Integrated) -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <p>Get In Touch</p>
-                <h2>Partner With Us</h2>
+                <p>We are here for you</p>
+                <h2>Start Your Project</h2>
                 <div class="gold-divider-center"></div>
             </div>
 
+            <!-- New Split Layout: Form + Info -->
             <div class="contact-container">
+
+                <!-- Map (Swapped to Top-Left) -->
+                <div class="contact-map-wrapper" style="height: 100%; min-height: 400px;">
+                    <h3 style="margin-bottom: 20px;">Locate Us</h3>
+                    <div class="map-frame" style="height: 100%;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99251.70812723847!2d72.65824987681692!3d19.408173907356097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a93891055565%3A0xf39283d30d9ad8cc!2sNala%20Sopara%2C%20Maharashtra!5e1!3m2!1sen!2sin!4v1768674415066!5m2!1sen!2sin"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <!-- Corporate Info -->
                 <div class="contact-info">
-                    <h3>Contact Information</h3>
+                    <h3>Corporate Headquarters</h3>
 
                     <div class="info-group">
                         <div class="info-icon">📍</div>
                         <div class="info-content">
-                            <h4>Address</h4>
+                            <h4>Registered Office</h4>
                             <p>Ground Floor, S. No. 83, Gala No. D/10<br>
                                 Sakwar Compound, Vartha Pada<br>
                                 Virar East, Vasai Virar<br>
@@ -663,42 +206,97 @@
                     <div class="info-group">
                         <div class="info-icon">✉️</div>
                         <div class="info-content">
-                            <h4>Email Us</h4>
+                            <h4>Export Desk</h4>
                             <p>galaxymetal23@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-group">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h4>Contact Details</h4>
+                            <p>+91 7878282061</p>
                         </div>
                     </div>
 
                     <div class="info-group">
                         <div class="info-icon">🕒</div>
                         <div class="info-content">
-                            <h4>Business Hours</h4>
-                            <p>Monday - Saturday: 9:00 AM - 7:00 PM</p>
+                            <h4>Assistance Hours</h4>
+                            <p>Monday - Saturday: 9:00 AM - 7:00 PM (IST)</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="contact-map">
-                    <div class="map-frame" style="border: none; overflow: hidden;">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99251.70812723847!2d72.65824987681692!3d19.408173907356097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a93891055565%3A0xf39283d30d9ad8cc!2sNala%20Sopara%2C%20Maharashtra!5e1!3m2!1sen!2sin!4v1768674415066!5m2!1sen!2sin"
-                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
             </div>
+
+            <!-- Contact Form (Swapped to Bottom) -->
+            <div class="contact-form-full"
+                style="margin-top: 60px; max-width: 800px; margin-left: auto; margin-right: auto; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                <div class="contact-info" style="text-align: center;">
+                    <h3>Send a Message</h3>
+                    <p style="margin-bottom: 20px;">For export inquiries or project consultations, please fill out
+                        the form below.</p>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Business Email</label>
+                        <input type="email" id="email" placeholder="name@company.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Project / Inquiry Type" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Tell us about your requirements..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn-gold-dark" style="width: 100%; border: none;">Send
+                        Inquiry</button>
+                </form>
+            </div>
+
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Rajasthan Mining Group. All Rights Reserved.</p>
-            <p style="font-size: 0.8rem; opacity: 0.5;">Excellence in Natural Stone Mining & Processing</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>GALAXY METAL</h3>
+                    <p>Premium natural stone exporters from the heart of Rajasthan. Delivering excellence in granite,
+                        marble, and sandstone to global markets since establishment.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Collection</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><span>📍</span> Mumbai, Maharashtra, India</p>
+                    <p><span>📞</span> +91 7878282061</p>
+                    <p><span>✉️</span> galaxymetal23@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Galaxy Metal - Rajasthan Mining Group. All Rights Reserved.</p>
+                <p>Global Head Office: Mumbai, India</p>
+            </div>
         </div>
     </footer>
 
-    <!-- PDF Save Benefit -->
-
+    <script src="script.js"></script>
 </body>
 
 </html>
