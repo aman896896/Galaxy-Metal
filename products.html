@@ -38,8 +38,12 @@
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <header class="page-header" style="background-image: url('images/5.jpeg');">
+    <!-- Page Header with Video Background -->
+    <header class="page-header video-header">
+        <video autoplay muted loop playsinline class="video-bg">
+            <source src="video/video2.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
         <div class="hero-content">
             <h2
                 style="font-size: 1rem; color: var(--bg-secondary); margin-bottom: 15px; font-family: 'Cinzel', serif; letter-spacing: 4px;">
@@ -132,6 +136,34 @@
                 <div class="gallery-item"><img src="images/16.jpeg" alt="Block 2"></div>
                 <div class="gallery-item"><img src="images/3.jpeg" alt="Quarry View"></div>
                 <div class="gallery-item"><img src="images/13.jpeg" alt="Block 3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Showcase -->
+    <section id="videos" class="video-section">
+        <div class="container">
+            <div class="section-header">
+                <p>Experience Our Work</p>
+                <h2>Video Showcase</h2>
+                <div class="gold-divider-center"></div>
+            </div>
+
+            <div class="video-grid">
+                <div class="video-item">
+                    <video controls playsinline preload="metadata">
+                        <source src="video/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h4>Alaska Stone</h4>
+                </div>
+                <div class="video-item">
+                    <video controls playsinline preload="metadata">
+                        <source src="video/video2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h4>Alaska Stone</h4>
+                </div>
             </div>
         </div>
     </section>
