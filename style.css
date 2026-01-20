@@ -958,7 +958,7 @@ footer {
         height: 100vh;
         width: 75%;
         max-width: 320px;
-        background: linear-gradient(180deg, #1a1a1a 0%, #2d2d2d 100%);
+        background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -973,12 +973,15 @@ footer {
     }
 
     /* Fix mobile menu text visibility */
+
+
     .nav-links a.nav-item {
         color: rgba(255, 255, 255, 0.95);
         font-size: 1rem;
         letter-spacing: 3px;
         padding: 12px 20px;
     }
+
 
     .nav-links a.nav-item:hover,
     .nav-links a.nav-item.active {
