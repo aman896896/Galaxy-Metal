@@ -968,7 +968,7 @@ footer {
         padding: 60px 20px;
     }
 
-    l̥ō .nav-links.active {
+    .nav-links.active {
         right: 0;
     }
 
@@ -976,7 +976,7 @@ footer {
 
 
     .nav-links a.nav-item {
-        color: rgba(255, 255, 255, 0.95);
+        color: #1a1a1a;
         font-size: 1rem;
         letter-spacing: 3px;
         padding: 12px 20px;
