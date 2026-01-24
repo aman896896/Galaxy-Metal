@@ -95,13 +95,74 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    // Contact Form Handling (Simple Alert)
-    const contactForm = document.querySelector('form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for your inquiry. Our team will contact you shortly.');
-            contactForm.reset();
-        });
+    // EmailJS Configuration
+    const EMAILJS_CONFIG = {
+        serviceId: 'service_tgzpfms',
+        templateId: 'template_k9yhqxs',
+        publicKey: 'WzpOviiFeguCep-FL'
+    };
+
+    // Initialize EmailJS
+    if (typeof emailjs !== 'undefined') {
+        emailjs.init(EMAILJS_CONFIG.publicKey);
     }
+
+    // Contact Form Handling with EmailJS
+    const contactForms = document.querySelectorAll('form.contact-form');
+    contactForms.forEach(form => {
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+
+            // Show loading state
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            submitBtn.style.opacity = '0.7';
+
+            // Get form data
+            const formData = {
+                from_name: form.querySelector('#name').value,
+                from_email: form.querySelector('#email').value,
+                subject: form.querySelector('#subject').value,
+                message: form.querySelector('#message').value
+            };
+
+            try {
+                // Send email via EmailJS
+                await emailjs.send(
+                    EMAILJS_CONFIG.serviceId,
+                    EMAILJS_CONFIG.templateId,
+                    formData
+                );
+
+                // Success
+                submitBtn.textContent = 'Sent Successfully! ✓';
+                submitBtn.style.background = '#28a745';
+                form.reset();
+
+                // Reset button after 3 seconds
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.style.opacity = '1';
+                    submitBtn.style.background = '';
+                }, 3000);
+
+            } catch (error) {
+                console.error('EmailJS Error:', error);
+                submitBtn.textContent = 'Failed to send. Try again.';
+                submitBtn.style.background = '#dc3545';
+
+                // Reset button after 3 seconds
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.style.opacity = '1';
+                    submitBtn.style.background = '';
+                }, 3000);
+            }
+        });
+    });
 });
